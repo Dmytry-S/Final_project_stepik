@@ -28,6 +28,7 @@ def browser(request):
         option.add_experimental_option('prefs', {'intl.accept_languages': page_language})
         print("\nChrome started..")
         browser = webdriver.Chrome(options=option)
+        browser.maximize_window()
     yield browser
     print("\nquit browser")
     browser.quit()
