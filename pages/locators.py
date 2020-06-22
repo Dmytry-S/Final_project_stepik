@@ -12,11 +12,8 @@ class LoginPageLocators():
 
 class ProductPageLocators():
     ADD_TO_BASKET = (By.CSS_SELECTOR, ".btn-add-to-basket")
-    PAGE_BOOK_NAME = (By.XPATH, "//h1[contains(text(),'The shellcoder')]")
-    PAGE_BOOK_PRICE = (By.XPATH, "//p[text()='£9.99']")
-    MESSAGE_BOOK_NAME = (By.XPATH, "//div[@class='alertinner '] //strong[contains(text(),'The shellcoder')]")
-    MESSAGE_BOOK_PRICE = (By.XPATH, "//div[@class='alertinner '] //strong[contains(text(),'£9.99')]")
+    PAGE_BOOK_NAME = (By.CSS_SELECTOR, ".product_main > h1")
+    PAGE_BOOK_PRICE = (By.CSS_SELECTOR, ".product_main > .price_color")
+    MESSAGE_BOOK_NAME = (By.CSS_SELECTOR, "#messages > .alert:nth-child(1) > .alertinner > strong")
+    MESSAGE_BOOK_PRICE = (By.CSS_SELECTOR, "#messages > .alert:nth-child(3) > .alertinner > p > strong")
 
-
-# //h1[text()="The shellcoder's handbook"]
-# //p[text()='£9.99']

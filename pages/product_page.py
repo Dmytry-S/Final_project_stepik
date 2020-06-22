@@ -24,4 +24,3 @@ class ProductPage(BasePage):
 
 
 
-
