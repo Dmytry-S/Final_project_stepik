@@ -16,4 +16,4 @@ class ProductPageLocators():
     PAGE_BOOK_PRICE = (By.CSS_SELECTOR, ".product_main > .price_color")
     MESSAGE_BOOK_NAME = (By.CSS_SELECTOR, "#messages > .alert:nth-child(1) > .alertinner > strong")
     MESSAGE_BOOK_PRICE = (By.CSS_SELECTOR, "#messages > .alert:nth-child(3) > .alertinner > p > strong")
-
+    SUCCESS_MESSAGE = (By.CSS_SELECTOR, "div.fade:nth-child(1)")

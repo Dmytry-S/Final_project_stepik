@@ -19,6 +19,13 @@ class ProductPage(BasePage):
         assert page_name_text == message_name_text, "Should be equal book name"
         assert page_price_text == message_price_text, "Should be equal book price"
 
+    def should_not_be_success_message(self):
+        assert self.is_not_element_present(*ProductPageLocators.SUCCESS_MESSAGE), \
+            "Success message is presented, but should not be"
+
+    def should_disappear_success_message(self):
+        assert self.is_disappeared(*ProductPageLocators.SUCCESS_MESSAGE), \
+            "Success message didn't disappear"
 
 
 
