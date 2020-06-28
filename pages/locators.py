@@ -1,16 +1,23 @@
 from selenium.webdriver.common.by import By
 
 
-class BasePageLocators():
+class BasePageLocators:
     LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
 
 
-class LoginPageLocators():
+class BasketPageLocators:
+    BASKET_LINK = (By.CSS_SELECTOR, ".btn-group > a.btn.btn-default")
+    BASKET_PAGE = (By.CSS_SELECTOR, ".page-header.action")
+    BASKET_GOODS = (By.CSS_SELECTOR, ".basket_items")
+    BASKET_EMPTY_TEXT = (By.CSS_SELECTOR, "#content_inner > p")
+
+
+class LoginPageLocators:
     LOGIN_FORM = (By.ID, "login_form")
     REGISTER_FORM = (By.ID, "register_form")
 
 
-class ProductPageLocators():
+class ProductPageLocators:
     ADD_TO_BASKET = (By.CSS_SELECTOR, ".btn-add-to-basket")
     PAGE_BOOK_NAME = (By.CSS_SELECTOR, ".product_main > h1")
     PAGE_BOOK_PRICE = (By.CSS_SELECTOR, ".product_main > .price_color")
