@@ -1,5 +1,4 @@
 from selenium.webdriver.common.by import By
-import time
 
 
 class BasePageLocators:
@@ -21,7 +20,6 @@ class LoginPageLocators:
     PASSWORD_1 = (By.XPATH, "//input[@name='registration-password1']")
     PASSWORD_2 = (By.XPATH, "//input[@name='registration-password2']")
     SUBMIT_BUTTON = (By.XPATH, "//button[@name='registration_submit']")
-    # email = str(time.time()) + "@fakemail.org"
     password = "123ton789"
 
 

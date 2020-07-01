@@ -1,7 +1,5 @@
-from pages.product_page import ProductPage
-import time
 import pytest
-
+from pages.product_page import ProductPage
 
 link = "http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/?promo=newYear2019"
 
