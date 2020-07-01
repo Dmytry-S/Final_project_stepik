@@ -1,8 +1,10 @@
 from selenium.webdriver.common.by import By
+import time
 
 
 class BasePageLocators:
     LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
+    USER_ICON = (By.CSS_SELECTOR, ".icon-user")
 
 
 class BasketPageLocators:
@@ -15,6 +17,12 @@ class BasketPageLocators:
 class LoginPageLocators:
     LOGIN_FORM = (By.ID, "login_form")
     REGISTER_FORM = (By.ID, "register_form")
+    EMAIL_FIELD = (By.XPATH, "//input[@name='registration-email']")
+    PASSWORD_1 = (By.XPATH, "//input[@name='registration-password1']")
+    PASSWORD_2 = (By.XPATH, "//input[@name='registration-password2']")
+    SUBMIT_BUTTON = (By.XPATH, "//button[@name='registration_submit']")
+    # email = str(time.time()) + "@fakemail.org"
+    password = "123ton789"
 
 
 class ProductPageLocators:
